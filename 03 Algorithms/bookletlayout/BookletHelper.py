@@ -1,13 +1,13 @@
 class BookletHelper:
     """
     Constructs BookletHelper with the number of pages in a document.
+    Number of pages defaults to 0.
     """
     def __init__(self, pages = 0):
         self.pages = pages
 
     """
     Changes the number of pages in a document. 
-    This is different from the constructor in the sense that this method can be called multiple times.
     Returns the current instance of BookletHelper.
     """
     def setPages(self, pages: int):
